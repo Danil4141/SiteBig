@@ -1,0 +1,119 @@
+
+header{
+    background-color:#00237d;
+    width: auto;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+
+@font-face{
+    font-family: "Blooming Elegant";
+    src: url(Fonts/Blooming\ Elegant\ Sans.otf);
+}
+
+@font-face{
+    font-family: "Cedora Bold";
+    src: url(Fonts/Cedora-BoldStd.otf);
+}
+
+@font-face{
+    font-family: "Purisma Bold";
+    src: url(Fonts/Purissima\ Bold\ W00\ Regular.ttf);
+}
+
+.text-white{
+    color: white;
+}
+
+.team-card>img, .team-card__substrate{
+    width: 255px;
+    height: 306px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+
+}
+
+.team-card{
+    margin-bottom: 40px;
+    position: relative;
+    
+}
+
+.team-card>img{
+    z-index: 2;
+}
+
+.navbar-toggler{
+    background-color: rgba(255, 255 , 255, 0.5);
+}
+
+.team-card__substrate{
+    background-color: #0c5adb;
+    position: absolute;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.team-card:hover .team-card__substrate{
+transform:rotate(-10deg);
+}
+
+
+.team-card__paralelogram{
+    background-color: #0c5adb;
+    position: absolute;
+    top: 240px;
+    width: 220px;
+    height: 70px;
+    z-index: 6;
+    clip-path: polygon(20% 0%, 95% 0%, 75% 100%, 0% 100%);
+}
+
+.team-card__paralelogram span{
+    color: white;
+    position: absolute;
+}
+
+.team-card__name-title{
+    font-size: 26px;
+    font-family: "Purisma Bold";
+    top: 12px;
+    left: 55px;
+}
+
+.team-card__position-title{
+    font-size: 17px;
+    font-family: "Noto Sans", sans-serif;
+    top: 40px;
+    left: 53px;
+    visibility: visible;/*Изначально элемент видимый */
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.team-card:hover .team-card__position-title{
+    transform:translateY(-24px) ;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.team-card__Icons{
+    top: 80px;
+    left: 53px;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.team-card:hover .team-card__Icons{
+    top: 40px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.team-card__Icons a{
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
